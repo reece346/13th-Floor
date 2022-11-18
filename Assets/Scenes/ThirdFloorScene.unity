@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88030e267a9c8d41810a3de78bf68ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 567949737}
   cameraOffset: {x: 0, y: 0, z: 0}
 --- !u!81 &555706861
 AudioListener:
@@ -545,6 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 15
   velocity: {x: 0, y: 0, z: 0}
+  isKeyPressed: 0
 --- !u!54 &567949733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -672,6 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2371ba1c6321c4c9cbf966af4ad587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloorToGo: 
 --- !u!65 &1865662590
 BoxCollider:
   m_ObjectHideFlags: 0

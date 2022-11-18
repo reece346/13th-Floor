@@ -20,15 +20,6 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Double If statment only allows for 4 directions (forward, left, right, backward)
-        //if (Input.GetAxis("Vertical") != 0.0f) {
-            // either forward or backwards is being read
-            //movePlayer(Input.GetAxis("Vertical"), 0.0f);
-        //} else if (Input.GetAxis("Horizontal") != 0.0f) {
-            //either left or right is being read
-            //movePlayer(0.0f, Input.GetAxis("Horizontal"));
-        //}
-
         if (isKeyPressed == false) {
             //Detect when the up arrow key is pressed down
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
@@ -77,23 +68,4 @@ public class playerMovement : MonoBehaviour
         velocity = direction;
         rigidBod.velocity = new Vector3(velocity.x * playerSpeed, 0.0f, velocity.z * playerSpeed);
     }
-    /*
-    public void movePlayer(float moveVertical, float moveHorizontal) {
-        Vector3 translation;
-
-        // Updates the values needed to translate the player
-        translation = moveVertical * rigidBod.transform.forward;
-        translation += moveHorizontal * rigidBod.transform.right;
-        translation.y = 0;
-
-        if (translation.magnitude > 1.0f) {
-            velocity = translation;
-        } else {
-            velocity = Vector3.zero;
-        }
-
-        // Update the velocity
-        rigidBod.velocity = new Vector3(velocity.x * playerSpeed, 0.0f, velocity.z * playerSpeed);
-    }
-    */
 }

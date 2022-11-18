@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 8
   velocity: {x: 0, y: 0, z: 0}
+  isKeyPressed: 0
 --- !u!54 &99496905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1294,6 +1295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2371ba1c6321c4c9cbf966af4ad587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloorToGo: ThirdFloorScene
 --- !u!65 &1211587400
 BoxCollider:
   m_ObjectHideFlags: 0

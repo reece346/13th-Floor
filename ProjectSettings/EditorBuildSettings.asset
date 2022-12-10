@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FirstFloorScene.unity
+    path: Assets/Scenes/MainScreen.unity
+    guid: dccadb87aa757834a950c1df1edb74a9
+  - enabled: 1
+    path: Assets/Scenes/First Floor Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/SecondFloorScene.unity
@@ -14,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThirdFloorScene.unity
     guid: bf9368aebcb48294681aaa58ad9d1e5e
+  - enabled: 1
+    path: Assets/Scenes/Instructions Scene.unity
+    guid: bfb2965801130a64aa8bd644ae746778
+  - enabled: 1
+    path: Assets/Scenes/About Scene.unity
+    guid: 2434b9f85af14584c8cee34f32ee9731
+  - enabled: 1
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: 5388e56a9abd45844b1b36cf524581d7
+  - enabled: 1
+    path: Assets/Scenes/WinningScreen.unity
+    guid: c4dfbf13cc86f4f42b7fade8de885c22
   m_configObjects: {}

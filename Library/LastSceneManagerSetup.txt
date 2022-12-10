@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/FirstFloorScene.unity
+- path: Assets/Scenes/WinningScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -32,48 +32,52 @@ public class HumanMovement : MonoBehaviour
         timer4++;
 
         if (humanNumber == "human0") {
-            if (timer0 <= 1000) {
+            if (timer0 <= 100) {
                 moveHuman(Vector3.right);
-            } else if (timer0 > 1000 && timer0 < 2000) {
+            } else if (timer0 > 100 && timer0 < 200) {
                 moveHuman(Vector3.left);
             } else {
                 timer0 = 0;
             }
         }
         if (humanNumber == "human1") {
-            if (timer1 <= 1500) {
+            if (timer1 <= 100) {
                 moveHuman(Vector3.back);
-            } else if (timer1 > 1500 && timer1 < 3000) {
+            } else if (timer1 > 100 && timer1 < 200) {
                 moveHuman(Vector3.forward);
             } else {
                 timer1 = 0;
             }
         }
         if (humanNumber == "human3") {
-            if (timer3 <= 1500) {
+            if (timer3 <= 100) {
                 moveHuman(Vector3.forward);
-            } else if (timer3 > 1500 && timer3 < 3000) {
+            } else if (timer3 > 100 && timer3 < 200) {
                 moveHuman(Vector3.back);
             } else {
                 timer3 = 0;
             }
         }
         if (humanNumber == "human4") {
-            if (timer4 <= 1500) {
+            if (timer4 <= 150) {
                 moveHuman(Vector3.back);
-            } else if (timer4 > 1500 && timer4 < 3000) {
+            } else if (timer4 > 150 && timer4 < 300) {
                 moveHuman(Vector3.forward);
             } else {
                 timer4 = 0;
+                
             }
         }
     }
 
     void OnTriggerEnter (Collider playerTouch) {
-        elevator.elevatorButtonsPressed = 0;
-        //player.position.x = 10;
-        //player.position.y = 2.3;
-        //player.position.z = 12;
+        // Check if the colliding object is the player
+        Player player = playerTouch.GetComponent<Player>();
+
+        if (player != null) {
+            SceneManager.LoadScene("GameOverScreen");
+            elevator.elevatorButtonsPressed = 0;
+        }
     }
 
     public void moveHuman(Vector3 direction) {
